@@ -20,5 +20,6 @@ from ReservaBarberia import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.home,name='home'),
-    path('codigo/django',views.ejemplo,name='ejemplo')
+    path('codigo/django',views.ejemplo,name='ejemplo'),
+    path('inicio',views.index,name='index')
 ]
