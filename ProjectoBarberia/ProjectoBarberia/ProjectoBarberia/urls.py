@@ -21,5 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.home,name='home'),
     path('codigo/django',views.ejemplo,name='ejemplo'),
-    path('inicio',views.index,name='index')
+    path('inicio/',views.index,name='index'),
+    path('nuevo/',views.reserva_view,name='reserva_view'),
+    path('listar/',views.reserva_list,name='reserva_list'),
 ]

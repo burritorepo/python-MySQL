@@ -1,6 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import RequestContext
+from ReservaBarberia.forms import ReservaForm
+from ReservaBarberia.models import Reserva
+
 def home (request):
     context = {'foo': 'bar'}
     return render(request,'base.html',context)
@@ -17,4 +20,18 @@ la plantilla de la aplicacion ReservaBarberia, que hereda su diseño de base.htm
 def index (request):
     return render (request, 'reservas/index.html')
 
+def reserva_view (request):
+    if request.method == "POST":
+        form = ReservaForm(request.POST)
+        if form.is_valid():
+            form.save()
+        return render(request,'reservas/index.html',{'form':form})
+    else:
+        form = ReservaForm()
+        return render(request,'reservas/reserva_form.html',{'form':form})
+
+def reserva_list (request):
+    reserva = Reserva.objects.all()
+    context = {'reservas': reserva}
+    return render(request,'reservas/reserva_list.html',context)
 # Create your views here.

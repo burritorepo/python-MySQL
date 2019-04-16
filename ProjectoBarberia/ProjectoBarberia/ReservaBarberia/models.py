@@ -51,7 +51,7 @@ class Reserva(models.Model):
     codbarbero = models.ForeignKey(Barbero,on_delete = models.CASCADE)
     codclie = models.ForeignKey(Cliente,on_delete = models.CASCADE)
     codserv = models.ManyToManyField(Servicio)
-    fecha = models.DateField(auto_now = True) #por defecto retorna la fecha del sistema
+    fecha = models.DateField() #por defecto retorna la fecha del sistema
     obs = models.TextField()
 
     class Meta:
