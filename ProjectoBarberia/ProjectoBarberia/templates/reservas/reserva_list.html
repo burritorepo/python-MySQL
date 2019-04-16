@@ -10,6 +10,7 @@
 			<td>Servicio</td>
 			<td>Fecha_Res</td>
 			<td>Obs</td>
+			<td>Acciones</td>
 		</tr>
 	</thead>
 	<tbody>
@@ -22,6 +23,12 @@
             <td>{{ reserva.codserv}}</td>
 			<td>{{ reserva.fecha}}</td>
 			<td>{{ reserva.obs}}</td>
+			<td>
+				<a href="{% url 'reserva_edit' reserva.codreserva %}" class="btn btn-primary">Edit</a>
+			</td>
+			<td>
+				<a href="{% url 'reserva_delete' reserva.codreserva %}" class="btn btn-danger">Delete</a>
+			</td>
         </tr>
         {% endfor %}
         {% else %}

@@ -24,4 +24,6 @@ urlpatterns = [
     path('inicio/',views.index,name='index'),
     path('nuevo/',views.reserva_view,name='reserva_view'),
     path('listar/',views.reserva_list,name='reserva_list'),
+    path('editar/<codres>/',views.reserva_edit,name='reserva_edit'),
+    path('delete/<codres>/',views.reserva_delete,name='reserva_delete'),
 ]

@@ -34,4 +34,27 @@ def reserva_list (request):
     reserva = Reserva.objects.all()
     context = {'reservas': reserva}
     return render(request,'reservas/reserva_list.html',context)
+
+def reserva_edit (request,codres):
+    reserva = Reserva.objects.get(codreserva=codres)
+    if request.method == 'GET':
+        form = ReservaForm(instance=reserva)
+    else:
+        form = ReservaForm(request.POST,instance=reserva)
+        if form.is_valid():
+            form.save()
+            reserva = Reserva.objects.all()
+            context = {'reservas': reserva}
+            return render(request,'reservas/reserva_list.html',context)
+    return render(request,'reservas/reserva_form.html',{'form':form})
+
+def reserva_delete (request,codres):
+    reserva = Reserva.objects.get(codreserva=codres)
+    if request.method == 'POST':
+        reserva.delete()
+        reserva = Reserva.objects.all()
+        context = {'reservas': reserva}
+        return render(request,'reservas/reserva_list.html',context)
+    return render(request,'reservas/reserva_delete.html',{'reserva':reserva})
+
 # Create your views here.
