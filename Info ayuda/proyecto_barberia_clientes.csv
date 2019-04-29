@@ -1,0 +1,115 @@
+nomcliente,apecliente,dircliente,tlfcliente,estado
+Jeronimo,Burgos,Surco,234-5678,1
+Estefania,Villegas,Ate,234-5679,1
+Guillermo,Fernandez,Callao,234-5680,1
+Eliana,Ramirez,Surco,234-5681,1
+Jose,Carmona,Ate,234-5682,1
+Marcela,De santis,Miraflores,234-5683,1
+Daniela,Franco,Cercado,234-5684,1
+Rafael,Cortes,Los Olivos,234-5685,1
+Camilo,Berrio,Los Olivos,234-5686,1
+Francisco,Arias,Los Olivos,234-5687,1
+Antonio,Merizalde,Los Olivos,234-5688,1
+Karen,Restrepo,Ate,234-5689,1
+David,Lemus,Surco,234-5690,1
+Javier,Santana,Callao,234-5691,1
+Virginia,Saldarriaga,Lurin,234-5692,1
+Sergio,Posada,Comas,234-5693,1
+Jorge,Zea ,Chilca,234-5694,0
+Mariana,Diaz ,Mala,234-5695,0
+Esteban,Giraldo,Ica,234-5696,0
+Jorge,Idarraga,Callao,234-5697,0
+Alejandro,Simanca,Cercado,234-5698,0
+Angelina,Pulgarin,Lurin,234-5699,0
+Brenda,Aguirre,Comas,234-5700,0
+Gloria,Tamayo,San Juan,234-5701,0
+Andrea,Carmona ,San Juan,234-5702,0
+Lucero,Diaz ,San Juan,234-5703,0
+Angela,Alzate,San Juan,234-5704,0
+Felipe,Arango,San Juan,234-5705,0
+Elena,Garces,San Juan,234-5706,0
+Carmen,Uribe,San Juan,234-5707,1
+Daniel,Ospina,San Juan,234-5708,1
+Alberto,Peláez,San Juan,234-5709,1
+Elena,Perez,San Juan,234-5710,1
+Sebastian,Carmona,San Juan,234-5711,1
+Oscar,Cifuentes,San Juan Lurigancho,234-5712,1
+Santiago,Jaramillo,San Juan Lurigancho,234-5713,1
+Luis,Melano,San Juan Lurigancho,234-5714,1
+Tammy,Mendez,San Juan Lurigancho,234-5715,1
+Tomas,Ramirez,San Juan Lurigancho,234-5716,1
+Felipe,Girando,San Juan Lurigancho,234-5717,1
+Patricia,Diez,San Juan Lurigancho,234-5718,1
+Luisa,Sierra,Barranco,234-5719,1
+Sara,Vallejo,Barranco,234-5720,1
+Alexandra,Guerrero,Barranco,234-5721,1
+Lisa,Guerra,Barranco,234-5722,1
+Ana Maria,Rodríguez ,Comas,234-5723,1
+Sofia,Marulanda,Comas,234-5724,1
+Paula,Palacio,Independencia,234-5725,1
+Jesus,Bermudez,Independencia,234-5726,1
+Roberta,Toledo,Independencia,234-5727,1
+Tatiana,Arango,Independencia,234-5728,1
+Melina,Acevedo,Cercado,234-5729,1
+Cristina,Cock,Cercado,234-5730,1
+Manuela,Casadiegos,Cercado,234-5731,1
+Isabel,Salamanca,Cercado,234-5732,1
+Juan,Arango,Cercado,234-5733,1
+Luisa,Granda,Cercado,234-5734,1
+Monica,Arango ,Lurin,234-5735,1
+Federico,Arroyave,Lurin,234-5736,1
+Dalia,Lemos,Lurin,234-5737,1
+Ana,Jaramillo,Lurin,234-5738,1
+Maria,Lema,Pta Hermosa,234-5739,1
+Diana,Caro,Pta Hermosa,234-5740,1
+Amalia,Vergara,Pta Hermosa,234-5741,1
+Julian,Duque,Pta Hermosa,234-5742,1
+Maritza,Muñoz,San Bartolo,234-5743,1
+Andrés,Peláez,San Bartolo,234-5744,1
+Miguel,Sanchez,San Bartolo,234-5745,1
+Carolina,Cano,San Bartolo,234-5746,1
+Jessica,Marquez,San Bartolo,234-5747,1
+Samuel,Rico,San Bartolo,234-5748,1
+Gustavo,Mendez,San Bartolo,234-5749,1
+Karina,Jimenez,Chilca,234-5750,1
+Julieth,Osorio,Lurin,234-5751,1
+Lina,Villamizar,Comas,234-5752,1
+Carlos,Gomez,Callao,234-5753,1
+Simón,Gracía,Ate,234-5754,1
+Monica,Castro,Surco,234-5755,1
+Melisa,Uribe,Surco,234-5756,1
+Alejandra,Florez,Surco,234-5757,1
+Amalia,Gutierrez,Surco,234-5758,1
+Raquel,Medina,Surco,234-5759,1
+Gonzalo,Betancur,Surco,234-5760,1
+Santiago,Betancurt,Surco,234-5761,1
+Isabella,Marquez,Surco,234-5762,1
+Karla,Molina,Surco,234-5763,1
+Hilda,Rodriguez,Surco,234-5764,1
+Victoria,Hincapie,Surco,234-5765,1
+Pablo,Rojas ,Surco,234-5766,1
+Pamela,Serna,Surco,234-5767,1
+Stepania,Zapata,Surco,234-5768,1
+Manuel,Toro,Surco,234-5769,1
+Barbara,Henao,Surco,234-5770,1
+Leonardo,Vasquez,Surco,234-5771,1
+Juliana,Castrillón,Ate,234-5772,1
+Dinara,Lopez,Ate,234-5773,1
+Elisa,Mota,Ate,234-5774,1
+Alicia,Perez,Ate,234-5775,1
+Carlos,Posada,Ate,234-5776,1
+Mauricio,Arango,San Bartolo,234-5777,1
+Adriana,Hoyos,San Bartolo,234-5778,1
+Miguel,Suarez,San Bartolo,234-5779,1
+Natalia,Aristizabal,San Bartolo,234-5780,1
+Camila,Dominguez ,San Bartolo,234-5781,1
+Susana,Ruiz,Chorrillos,234-5782,1
+Cathy,Higuita,Chorrillos,234-5783,1
+Catalina,Osorio,Chorrillos,234-5784,1
+Mariana,Gomez,Chorrillos,234-5785,1
+Jacobo,Bustos,Chorrillos,234-5786,1
+Gabriel,Rodas,Chorrillos,234-5787,1
+Sandra,Cano,Ate,234-5788,1
+Evelyn,Diaz ,Cercado,234-5789,1
+Juan,Hernandez ,Comas,234-5790,1
+David,Jaramillo,Lurin,234-5791,1

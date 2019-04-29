@@ -1,0 +1,43 @@
+codcliente,codservicio,codbarbero,fechaservicio,observacion
+1,1,1,2019/04/17,Cliente Premium
+1,2,1,2019/04/18,Cliente Especial
+2,1,2,2019/04/19,Cliente Familiar
+2,2,2,2019/04/20,Cliente por APP
+3,1,1,2019/04/21,Cliente Paso
+3,2,1,2019/04/22,Cliente Paso
+3,3,2,2019/04/23,Cliente por APP
+4,1,2,2019/04/24,Cliente por APP
+4,2,1,2019/04/25,Cliente Paso
+4,3,1,2019/04/26,Cliente por APP
+4,4,1,2019/04/27,Cliente Especial
+5,1,2,2019/04/28,Cliente Especial
+5,2,3,2019/04/29,Cliente Especial
+5,3,4,2019/04/30,Cliente por APP
+5,4,5,2019/05/01,Cliente Especial
+6,1,1,2019/05/02,
+6,2,2,2019/05/03,Cliente Por Web
+6,3,3,2019/05/04,Cliente Premium
+6,4,4,2019/05/05,Cliente Paso
+6,5,5,2019/05/06,Cliente Familiar
+7,1,1,2019/05/07,Cliente Por Web
+7,2,1,2019/05/08,Cliente Premium
+8,1,2,2019/05/09,Cliente Paso
+8,2,2,2019/05/10,Cliente Familiar
+8,3,1,2019/05/11,Cliente Por Web
+8,4,1,2019/05/12,Cliente Premium
+9,1,2,2019/05/13,Cliente Paso
+9,2,2,2019/05/14,Cliente Premium
+9,3,1,2019/05/15,
+9,4,2,2019/05/16,Cliente Familiar
+9,5,3,2019/05/17,Cliente Paso
+10,1,4,2019/05/18,Cliente por APP
+10,2,5,2019/05/19,Cliente por APP
+10,3,1,2019/05/20,Cliente por APP
+10,4,2,2019/05/21,Cliente por APP
+10,5,3,2019/05/22,Cliente Paso
+11,1,4,2019/05/23,Cliente Paso
+11,2,5,2019/05/24,Cliente Paso
+11,3,2,2019/05/25,Cliente Por Web
+11,4,1,2019/05/26,Cliente Paso
+11,5,2,2019/05/27,Cliente Paso
+11,6,2,2019/05/28,Cliente Paso

@@ -2,7 +2,10 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import RequestContext
 from ReservaBarberia.forms import ReservaForm
-from ReservaBarberia.models import Reserva
+from ReservaBarberia.models import Reserva,Barbero
+from django.core import serializers
+from .serializer import BarberoSerializer
+from rest_framework import viewsets
 
 def home (request):
     context = {'foo': 'bar'}
@@ -58,3 +61,11 @@ def reserva_delete (request,codres):
     return render(request,'reservas/reserva_delete.html',{'reserva':reserva})
 
 # Create your views here.
+
+def reservas_json(request):
+    lista = serializers.serialize('json', Reserva.objects.all(),fields=['codbarbero','codclie'])
+    return HttpResponse(lista,content_type='application/json')
+
+class BarberoList(viewsets.ModelViewSet):
+    queryset = Barbero.objects.all()
+    serializer_class = BarberoSerializer
