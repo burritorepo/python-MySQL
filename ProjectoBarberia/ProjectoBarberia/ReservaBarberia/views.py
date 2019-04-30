@@ -7,6 +7,10 @@ from django.core import serializers
 from .serializer import BarberoSerializer
 from rest_framework import viewsets
 
+from django.template import RequestContext
+from django.views.generic import CreateView
+from django.urls import reverse_lazy
+
 def home (request):
     context = {'foo': 'bar'}
     return render(request,'base.html',context)
@@ -69,3 +73,21 @@ def reservas_json(request):
 class BarberoList(viewsets.ModelViewSet):
     queryset = Barbero.objects.all()
     serializer_class = BarberoSerializer
+
+class RegistrarBarbero(CreateView):
+    template_name = 'barberos/barberos_registro.html'
+    model = Barbero
+    fields = ('barberonom','fecharegistro','description')
+    success_url = reverse_lazy('barberos/barberos_registro.html')
+
+    def post(self, request, *arg, **kwargs):
+        estado = False
+        barbero = Barbero()
+        barbero.barberonom = request.POST['nombre']
+        barbero.fecharegistro = request.POST['fecha']
+        barbero.description = request.POST['descripcion']
+        barbero.save()
+        estado = True
+        dic = {'estado': estado}
+        contexto = {'barbero': barbero}
+        return render(request, 'barberos/barberos_registro.html',dic,contexto)

@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'ReservaBarberia',
-    'rest_framework'
+    'rest_framework',
+    'django_sb_admin',
 ]
 
 MIDDLEWARE = [
