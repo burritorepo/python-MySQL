@@ -1,0 +1,58 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Registrar Cliente</title>
+</head>
+
+<div class="d-flex justify-content-center">
+    <h1 class="display-4">Registar Cliente</h1>
+</div>
+<div class="d-flex justify-content-center">
+    <img src="../../static/login/images/avatar2.jpg" class="rounded-circle" width="160" height="200"
+        style="background-color: beige">
+</div>
+<div class="container-fluid mt-4 px-5">
+    <form method="POST" name="registrarb" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">Name</label>
+                <input type="text" class="form-control" name="nombre" id="inputEmail4" placeholder="Name">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputPassword4">Date</label>
+                <input type="text" class="form-control" name="fecha" id="inputPassword4" placeholder="yyyy-mm-dd">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">Phone number</label>
+                <input type="text" class="form-control" name="telefono" id="inputEmail4" placeholder="Phone number">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputPassword4">E-mail</label>
+                <input type="text" class="form-control" name="correo" id="inputPassword4" placeholder="client@gmail.com">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <input type="file" class="btn btn-outline-primary">
+        </div>
+        <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-outline-primary">Submit</button>
+        </div>
+
+    </form>
+</div>
+{% if estado %}
+<div class="d-flex justify-content-center mt-3">
+    <h2 class="btn btn-success">Success!</h2>
+</div>
+{% endif %}
+
+</html>
