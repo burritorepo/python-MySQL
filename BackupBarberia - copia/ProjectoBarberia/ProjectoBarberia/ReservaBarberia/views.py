@@ -77,7 +77,7 @@ class BarberoList(viewsets.ModelViewSet):
 class RegistrarBarbero(CreateView):
     template_name = 'barberos/barberos_registro.html'
     model = Barbero
-    fields = ('barberonom','fecharegistro','description')
+    fields = ('barberonom','fecharegistro','description','fotobarbero')
     success_url = reverse_lazy('barberos/barberos_registro.html')
 
     def post(self, request, *arg, **kwargs):
@@ -86,6 +86,7 @@ class RegistrarBarbero(CreateView):
         barbero.barberonom = request.POST['nombre']
         barbero.fecharegistro = request.POST['fecha']
         barbero.description = request.POST['descripcion']
+        barbero.fotobarbero = request.FILES['fotobarbero']
         barbero.save()
         estado = True
         dic = {'estado': estado}
@@ -105,10 +106,14 @@ class RegistrarCliente(CreateView):
         cliente.telefono = request.POST['telefono']
         cliente.fecharegistro = request.POST['fecha']
         cliente.correo = request.POST['correo']
-        cliente.imagen = request.POST['imagen']
+        cliente.imagen = request.FILES['imagen']
         cliente.save()
         estado = True
         dic = {'estado': estado}
         contexto = {'cliente': cliente}
         return render(request, 'clientes/clientes_registro.html',dic,contexto)
 
+def barberos_listado(request):
+    barbero = Barbero.objects.all()
+    contexto = {'barberos':barbero}
+    return render(request, 'barberos/barberos_list.html',contexto)

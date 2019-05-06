@@ -23,6 +23,11 @@ from ReservaBarberia.views import RegistrarBarbero
 
 from ReservaBarberia.views import RegistrarCliente
 
+from ReservaBarberia.views import barberos_listado
+
+from django.conf import settings
+from django.conf.urls.static import static
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.home,name='home'),
@@ -34,8 +39,12 @@ urlpatterns = [
     path('delete/<codres>/',views.reserva_delete,name='reserva_delete'),
     path('login/',LoginView.as_view(template_name='login.html'),name='login'),
     path('listado/',views.reservas_json,name='listado'),
-    path('barberos/',include('ReservaBarberia.urls')),
+    path('barberos/',include('ReservaBarberia.urls',namespace='barberosapp')),
     path('registrobarbero/',RegistrarBarbero.as_view(),name='registrar_barbero'),
     path('registrocliente/',RegistrarCliente.as_view(),name='registrar_cliente'),
     path('django-sb-admin/', include('django_sb_admin.urls')),
+
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

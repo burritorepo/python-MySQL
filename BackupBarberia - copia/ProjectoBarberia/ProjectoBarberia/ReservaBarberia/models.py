@@ -8,6 +8,7 @@ class Barbero(models.Model):
     fecharegistro = models.DateField()
     description = models.TextField()
     correo = models.EmailField(max_length=255)
+    fotobarbero = models.ImageField(upload_to='fotosbarberos',null=True)
 
     class Meta:
         verbose_name = 'Barbero'
@@ -23,7 +24,7 @@ class Cliente(models.Model):
     telefono = models.CharField('Telefono',max_length = 12)
     fecharegistro = models.DateField('Fecha')
     correo = models.EmailField('Correo',max_length=255)
-    imagen = models.ImageField(upload_to='images/%Y/%m/%d',blank=True)
+    imagen = models.ImageField(upload_to='fotosclientes',null=True)
 
     class Meta:
         verbose_name = 'Cliente'
