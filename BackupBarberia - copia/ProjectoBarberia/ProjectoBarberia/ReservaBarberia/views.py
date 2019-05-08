@@ -24,6 +24,7 @@ def ejemplo(request):
 
 """ Llamando el archivo index.html que representa
 la plantilla de la aplicacion ReservaBarberia, que hereda su diseño de base.html """
+
 def index (request):
     return render (request, 'reservas/index.html')
 

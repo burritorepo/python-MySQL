@@ -1,10 +1,10 @@
-{% extends 'base/base.html' %} <!-- Para heredar el diseño de base.html -->
+{% extends 'base/base.html' %} 
 
 {% block content %}
     <form method='POST'>
         {% csrf_token %}
         <h3>Desea eliminar el registro?</h3>
         <button class="btn btn-danger" type="submit">Yes</button>
-        <a class="btn btn-default" href="{% url 'reserva_list' %}">Cancel</a>
+        <a class="btn btn-default" href="{% url 'barberosapp:reserva_list' %}">Cancel</a>
     </form>
 {% endblock %}

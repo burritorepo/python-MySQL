@@ -33,17 +33,10 @@ urlpatterns = [
     path('',views.home,name='home'),
     path('codigo/django',views.ejemplo,name='ejemplo'),
     path('inicio/',views.index,name='index'),
-    path('nuevo/',views.reserva_view,name='reserva_view'),
-    path('listar/',views.reserva_list,name='reserva_list'),
-    path('editar/<codres>/',views.reserva_edit,name='reserva_edit'),
-    path('delete/<codres>/',views.reserva_delete,name='reserva_delete'),
-    path('login/',LoginView.as_view(template_name='login.html'),name='login'),
-    path('listado/',views.reservas_json,name='listado'),
-    path('barberos/',include('ReservaBarberia.urls',namespace='barberosapp')),
-    path('registrobarbero/',RegistrarBarbero.as_view(),name='registrar_barbero'),
-    path('registrocliente/',RegistrarCliente.as_view(),name='registrar_cliente'),
-    path('django-sb-admin/', include('django_sb_admin.urls')),
 
+    path('login/',LoginView.as_view(template_name='login.html'),name='login'),
+    path('barberos/',include('ReservaBarberia.urls',namespace='barberosapp')),
+    path('django-sb-admin/', include('django_sb_admin.urls')),
 ]
 
 if settings.DEBUG:
